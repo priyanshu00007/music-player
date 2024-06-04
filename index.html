@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Music Player</title>
+</head>
+<body >
+  <!-- Music player container -->
+  <div class="container">
+    <div class="music-player">
+      <!-- Song details -->
+      <div class="song-details">
+        <img class="song-image" src="rasiya.jpg" alt="song image" id="songImage">
+        <h3 class="song-title" id="songName">Rasiya Reprise, Brahmastra</h3>
+        <h5 class="singer" id="singerName">Tushar Joshi, Shreya Ghoshal</h5>
+      </div>
+      <!-- Controls -->
+    <div class="controls">
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+      <div class="player-buttons">
+        <div class="img">
+          <img class="prev" src="lef.png" alt="previous" id="prevButton">
+          <img class="play" src="play.png" alt="play" id="playButton">
+          <img class="next" src="rig.png" alt="next" id="nextButton">
+          <!-- Button to add a new song -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Audio element -->
+  <audio id="audio" src="rasiya.mp3"></audio>
+  <script src="script.js"></script>
+  <script src="indexDB.js"></script>
+</body>
+</html>
+
